@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Atlas Viewer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+
+        <!--- three.js files -->
+        <script src="libs/three.min.js"></script>
+        <script src="libs/TrackballControls.js"></script>
+        <script src="libs/VTKLoader.js"></script>
+        <script src="libs/LightKit.js"></script>
+        <script src="libs/Tween.js"></script>
+
+
+        <!--- local files -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <script src="configAtlasViewer.js"></script>
+        <script src="src/mainApp.js"></script>
+        <script src="src/atlasJson.js"></script>
+        <script src="src/loadingManager.js"></script>
+        <script src="src/hierarchyGroup.js"></script>
+        <script src="src/app.js"></script>
+
+
+    </head>
+
+    <body ng-app="atlasDemo">
+
+        <div id="rendererFrame"></div>
+        <script>
+            var app = App();
+            app.start();
+        </script>
+    </body>
+</html>
